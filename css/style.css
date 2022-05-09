@@ -100,6 +100,13 @@
     src: local('Butler Stencil Bold'), url('../fonts/Butler_Bold_Stencil.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+
 html {
     font-size: 12px;
 }
@@ -160,10 +167,9 @@ html>body .underline:hover {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #B9D8E9;
-    margin-bottom: 10px;
+    color: #EFF7FF;
+    margin-top: 17px;
+    margin-bottom: 0;
 }
 
 .logoBP4 {
@@ -4445,6 +4451,15 @@ a.minimal-item:hover {
 }
 
 .circular-container .circular-wrapper .circular-names li .name-wrapper {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
     display: inline-block;
     padding: 10px;
     padding-bottom: 0;
@@ -8258,8 +8273,8 @@ footer.navigation-menu-footer {
 }
 
 .icon-size {
-    height: 118px;
-    width: 116px;
+    height: 116px;
+    width: 118px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
@@ -8321,6 +8336,36 @@ footer.navigation-menu-footer {
 
 .pointer {
     cursor: pointer;
+}
+
+.borde-laterales {
+    border-bottom: 1px dashed #fff;
+    margin: auto;
+    padding: 0;
+}
+
+.borde-centro {
+    border-bottom: 1px dashed #fff;
+    border-left: 1px dashed #fff;
+    border-right: 1px dashed #fff;
+    margin: auto;
+    padding: 0;
+}
+
+.sin-borde {
+    margin: auto;
+    padding: 0;
+}
+
+.sin-borde-medio {
+    border-left: 1px dashed #fff;
+    border-right: 1px dashed #fff;
+    margin: auto;
+    padding: 0;
+}
+
+.ui-icon {
+    text-align: center;
 }
 
 @media screen and (max-width: 1400px) {
@@ -8394,17 +8439,24 @@ footer.navigation-menu-footer {
     left: 44px;
 }
 
-.switch-button-div {
+
+/*.switch-button-div {
     position: absolute;
     right: 5%;
     top: 55%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
+}*/
 
 .metodologia-inside-background {
     background-image: url("../img/Metodologia/Metodologia_Segundo_Scroll.png");
     transform: scale(1);
+}
+
+.button-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -8597,11 +8649,12 @@ footer.navigation-menu-footer {
 .icon-size-clientes img {
     /* height: 7.375rem;
     width: 9.375rem; */
-    height: 100%;
-    width: 100%;
+    width: 130px;
+    height: 60px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
+    margin: 30px 0;
 }
 
 .clientes-background {

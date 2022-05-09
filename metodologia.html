@@ -52,30 +52,19 @@
 
         <div class="home-horizontal a-horizontal full-height">
             <div class="section slide metodologia-background">
-                <div class="switch-button-div">
-                    <label>
-                        <!-- <a href="home-video.html" class="switch"></a> -->
-                        <a href="metodologia-slide.html"><img src="img\Metodologia\Boton (1).png" alt="HTML tutorial"
-                                class="arrow-button"></a>
-                    </label>
-                </div>
+
                 <div class="container container-margin">
                     <div class="row">
-                        <div class="col-md-6" id="outer">
-                            <div style="margin-top: 25%;">
-                                <h1 class="slide-title font-teko wow fadeInRight" data-wow-duration="1.2s">
-                                    <span class="menu-title">
-                                        Nuestras
-                                        Metologías
-                                    </span>
-                                </h1>
-                                <div class="slide-body wow fadeInRight" data-wow-delay=".2s" data-wow-duration="1.2s">
-                                    <div class="expertise-description">
-                                        Llevamos nuestro día a día de una manera <br>
-                                        organizada, siguiendo una serie de ideas <br>
-                                        que son las mejores para alcanzar los <br>
-                                        objetivos... Y nos sale muy bien!
-                                    </div>
+                        <div class="col-md-5" id="outer">
+                            <h1 class="slide-title font-teko wow fadeInRight" data-wow-duration="1.2s">
+                                <span class="menu-title">
+                                    Nuestras
+                                    Metologías
+                                </span>
+                            </h1>
+                            <div class="slide-body wow fadeInRight" data-wow-delay=".2s" data-wow-duration="1.2s">
+                                <div class="expertise-description">
+                                    Llevamos nuestro día a día de una manera <br> organizada, siguiendo una serie de ideas <br> que son las mejores para alcanzar los <br> objetivos... Y nos sale muy bien!
                                 </div>
                             </div>
                         </div>
@@ -85,25 +74,23 @@
                                     <div class="row">
                                         <div id="outer" class="col-md-6 top-left-icon-border">
                                             <div class="software-icon">
-                                                <img src="img\Metodologia\Iconos\Iconos-1.png" alt="entender"
-                                                    class="icon-size">
+                                                <img src="img\Metodologia\Iconos\Iconos-1.png" alt="entender" class="icon-size">
                                                 <p class="menu-title">
                                                     Entender
                                                 </p>
                                                 <div class="expertise-description">
-                                                    Lorem Ipsum is <br> simply dummy text.
+                                                    Conocer qué y <br>para quién
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 top-right-icon-border">
                                             <div class="ui-icon">
-                                                <img src="img\Metodologia\Iconos\Iconos-2.png" alt="planificar"
-                                                    class="icon-size">
+                                                <img src="img\Metodologia\Iconos\Iconos-2.png" alt="planificar" class="icon-size">
                                                 <p class="menu-title">
                                                     Planificar
                                                 </p>
                                                 <div class="expertise-description">
-                                                    Lorem Ipsum is <br> simply dummy text.
+                                                    Definición de <br>tareas del backlog
                                                 </div>
                                             </div>
                                         </div>
@@ -111,30 +98,37 @@
                                     <div class="row">
                                         <div class="col-md-6 bottom-left-icon-border">
                                             <div class="agile-icon">
-                                                <img src="img\Metodologia\Iconos\Iconos.png" alt="ejecutar"
-                                                    class="icon-size">
+                                                <img src="img\Metodologia\Iconos\Iconos.png" alt="ejecutar" class="icon-size">
                                                 <p class="menu-title">
                                                     Ejecutar
                                                 </p>
                                                 <div class="expertise-description">
-                                                    Lorem Ipsum is <br> simply dummy text.
+                                                    Sprint de desarrollo<br>y testing
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 bottom-right-icon-border">
                                             <div class="cloud-icon">
-                                                <img src="img\Metodologia\Iconos\Iconos-3.png" alt="reflexionar"
-                                                    class="icon-size">
+                                                <img src="img\Metodologia\Iconos\Iconos-3.png" alt="reflexionar" class="icon-size">
                                                 <p class="menu-title">
                                                     Reflexionar
                                                 </p>
                                                 <div class="expertise-description">
-                                                    Lorem Ipsum is <br> simply dummy text.
+                                                    Salió todo bien o se<br>itera para mejora
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 button-center">
+                            <div class="switch-button-div">
+                                <label>
+                                    <!-- <a href="home-video.html" class="switch"></a> -->
+                                    <a href="metodologia-slide.html"><img src="img\Metodologia\Boton (1).png" alt="HTML tutorial"
+                                            class="arrow-button"></a>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -167,7 +161,7 @@
     <script src="js/script.js"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.a-horizontal').pagepiling({
                 scrollingSpeed: 280,
                 menu: '#menu',
@@ -176,7 +170,7 @@
                 loopBottom: true,
                 anchors: ['Home', 'Services', 'Projects', 'Clients', 'Contacts'],
                 navigation: false,
-                afterLoad: function (anchorLink, index) {
+                afterLoad: function(anchorLink, index) {
                     if (index == 1 || index == 3 || index ==
                         5) { // Section with dark bacgkrounds
                         $('body').addClass('dark-horizontal');
@@ -186,13 +180,13 @@
                 }
             });
 
-            $('.a-pp-prev').on('click', function () {
+            $('.a-pp-prev').on('click', function() {
                 $.fn.pagepiling.moveSectionUp();
             });
-            $('.a-pp-next').on('click', function () {
+            $('.a-pp-next').on('click', function() {
                 $.fn.pagepiling.moveSectionDown();
             });
-            $('.switch').click(function () {
+            $('.switch').click(function() {
                 $(this).toggleClass("switchOn");
             })
         });
