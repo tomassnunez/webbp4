@@ -8459,6 +8459,29 @@ footer.navigation-menu-footer {
     justify-content: center;
 }
 
+#metodologia .menu-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #B9D8E9;
+    margin-top: 17px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#metodologia .expertise-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 10px;
+}
+
 
 /*-------------------------------------------------------------------------------
   17. Cultura
