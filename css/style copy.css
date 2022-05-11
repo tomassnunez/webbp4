@@ -4451,6 +4451,15 @@ a.minimal-item:hover {
 }
 
 .circular-container .circular-wrapper .circular-names li .name-wrapper {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
     display: inline-block;
     padding: 10px;
     padding-bottom: 0;
@@ -4466,8 +4475,7 @@ a.minimal-item:hover {
     opacity: .7;
 }
 
-
-/* .circular-container .circular-wrapper .circular-names li[data-portrait-index="1"] {
+.circular-container .circular-wrapper .circular-names li[data-portrait-index="1"] {
     bottom: 100%;
     left: 42%;
 }
@@ -4485,47 +4493,6 @@ a.minimal-item:hover {
 .circular-container .circular-wrapper .circular-names li[data-portrait-index="4"] {
     right: 100%;
     bottom: 47.8%;
-} */
-
-.circular-container .circular-wrapper .circular-names li[data-portrait-index="1"] {
-    bottom: 59.8%;
-    left: 100%;
-}
-
-.circular-container .circular-wrapper .circular-names li[data-portrait-index="2"] {
-    top: 83.65%;
-    left: 84%;
-}
-
-.circular-container .circular-wrapper .circular-names li[data-portrait-index="3"] {
-    top: 83.65%;
-    right: 84%;
-}
-
-.circular-container .circular-wrapper .circular-names li[data-portrait-index="4"] {
-    right: 100%;
-    bottom: 59.8%;
-}
-
-@media (max-width: 960px) {
-    .circular-container .circular-wrapper .circular-names li[data-portrait-index="4"] {
-        bottom: 58.6%;
-    }
-    .circular-container .circular-wrapper .circular-names li[data-portrait-index="4"] .name-wrapper {
-        white-space: normal;
-    }
-}
-
-@media (max-width: 780px) {
-    .circular-container .circular-wrapper .circular-names li[data-portrait-index="5"] {
-        bottom: 99.5%;
-        left: 32.5%;
-    }
-}
-
-.circular-container .circular-wrapper .circular-names li[data-portrait-index="5"] {
-    bottom: 99.5%;
-    left: 34%;
 }
 
 video {
@@ -4647,14 +4614,15 @@ video {
 }
 
 .video-item-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #B9D8E9;
+    margin-bottom: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 4.555556vmin;
+    font-weight: bold;
+    letter-spacing: -.05em;
+    line-height: 1.2;
+    color: #B9D8E9 !important;
 }
 
 .video-item-title a {
@@ -4685,14 +4653,13 @@ video {
 }
 
 .video-item-descr {
-    margin-top: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
+    margin-top: 4.07407407vmin;
+    margin-bottom: 4vmin;
+    overflow: hidden;
+    height: auto;
+    line-height: 1.875;
+    font-size: 1.375rem;
+    color: #fff;
 }
 
 .video-item-more {
@@ -4709,7 +4676,7 @@ video {
     }
     .video-item-descr {
         height: 9.375em;
-        height: 14.888889vmin;
+        height: 13.88888889vmin;
         margin-bottom: 2.59259259vmin;
     }
     .video-text-item {
@@ -8221,38 +8188,6 @@ footer.navigation-menu-footer {
     text-align: left;
 }
 
-@media screen and (max-width: 768px) {
-    .navigation-menu-item {
-        margin-top: 70px;
-    }
-    .contact-text {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 12px;
-        color: #FFFFFF;
-        margin-top: 4px;
-        margin-bottom: 0rem;
-    }
-    .direction-text {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 10px;
-        line-height: 12px;
-        color: #FFFFFF;
-        margin-top: 4px;
-    }
-    .contact-text:first-child {
-        margin-top: 12px;
-    }
-    #navegacion .outer {
-        justify-content: flex-start;
-        margin-left: 15px;
-    }
-}
-
 
 /*-------------------------------------------------------------------------------
   16. Expertise
@@ -8545,63 +8480,6 @@ footer.navigation-menu-footer {
     color: #FFFFFF;
     text-align: left;
     margin-top: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .border-mobile .menu-title {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 18px;
-        color: #B9D8E9;
-    }
-    #metodologia .slide-title .menu-title {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 39px;
-        display: flex;
-        align-items: center;
-        color: #B9D8E9;
-        margin-top: 80px;
-    }
-    #metodologia .expertise-description {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 15px;
-        color: #FFFFFF;
-    }
-    #metodologia .expertise-description {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-    }
-    .icon-size {
-        height: 70px;
-        width: 70px;
-    }
-    .border-mobile {
-        width: 50% !important;
-        float: left;
-        border: none;
-        margin: 0;
-    }
-    html,
-    body {
-        overflow: auto !important;
-    }
-    #metodologia #outer {
-        justify-content: flex-start;
-    }
 }
 
 

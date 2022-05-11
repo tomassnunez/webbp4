@@ -447,11 +447,8 @@
         }
     });
 
-    // var dStart = 2644;
-    // var magicAngles = [9999, 0, 1992, 1327, 670];
-
     var dStart = 2644;
-    var magicAngles = [9999, 2108, 1580, 1050, 530, 0];
+    var magicAngles = [9999, 0, 1992, 1327, 670];
 
     var findDotIndex = function (a, direction) {
         if (direction == 'forward') {
