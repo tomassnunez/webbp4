@@ -8841,3 +8841,125 @@ footer.navigation-menu-footer {
     right: 0;
     bottom: 0;
 }
+
+
+/*-------------------------------------------------------------------------------
+  . Productos
+-------------------------------------------------------------------------------*/
+
+#productos {
+    overflow: scroll !important;
+}
+
+.productos-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: #FF6000;
+    margin-bottom: 20px;
+}
+
+.productos-subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.productos-items {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: #0E3541;
+}
+
+.productos-items-texto {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.boton-pampa {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #9BC0D3 !important;
+    border: 1px solid #9BC0D3;
+    border-radius: 35px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 30px;
+    gap: 10px;
+    position: absolute;
+    height: 40px;
+    cursor: pointer;
+}
+
+.tarjetas {
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+#contenido-productos {
+    margin-top: 100px;
+}
+
+.productos-footer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0E3541;
+    margin-bottom: 6px;
+}
+
+.productos-footer:nth-child(3) {
+    font-weight: 300;
+}
+
+.linkedin {
+    margin-top: 20px;
+}
+
+.linkedin img {
+    width: 25px;
+    height: 25px;
+}
+
+.linea-footer {
+    border-top: 1px solid #B9D8E9;
+    width: 100%;
+    padding: 60px 0;
+}
