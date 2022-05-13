@@ -8963,3 +8963,71 @@ footer.navigation-menu-footer {
     width: 100%;
     padding: 60px 0;
 }
+
+.content-title {
+    min-height: 20vh;
+    margin-bottom: 200px;
+}
+
+.img-phone {
+    width: 288px;
+}
+
+#producto #header {
+    background: white !important;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .tarjetas {
+        padding: 5%;
+        flex-wrap: wrap;
+    }
+    .content-title {
+        margin-bottom: 150px;
+    }
+    #contenido-productos .cultura-images-horizontal {
+        margin-bottom: 100px;
+    }
+    .img-phone {
+        width: 100%;
+    }
+    .productos-title {
+        font-size: 30px;
+        line-height: 39px;
+        color: #0E3541;
+    }
+    .productos-subtitle {
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+    }
+    .productos-items {
+        font-size: 24px;
+        line-height: 55px;
+        text-transform: uppercase;
+        color: #9BC0D3;
+    }
+    .productos-items-texto {
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+    }
+    .boton-pampa {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #F54748 !important;
+        border: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .linkedin img {
+        width: 30px;
+        height: auto;
+    }
+}
