@@ -8437,7 +8437,7 @@ footer.navigation-menu-footer {
 }
 
 .ui-icon {
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (max-width: 1400px) {
@@ -8531,7 +8531,8 @@ footer.navigation-menu-footer {
     justify-content: center;
 }
 
-#metodologia .menu-title {
+#metodologia .menu-title,
+#capacidades .menu-title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -8543,7 +8544,8 @@ footer.navigation-menu-footer {
     text-align: left;
 }
 
-#metodologia .expertise-description {
+#metodologia .expertise-description,
+#capacidades .expertise-description {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -8563,7 +8565,8 @@ footer.navigation-menu-footer {
         line-height: 18px;
         color: #B9D8E9;
     }
-    #metodologia .slide-title .menu-title {
+    #metodologia .slide-title .menu-title,
+    #capacidades .slide-title .menu-title {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -8574,7 +8577,8 @@ footer.navigation-menu-footer {
         color: #B9D8E9;
         margin-top: 80px;
     }
-    #metodologia .expertise-description {
+    #metodologia .expertise-description,
+    #capacidades .expertise-description {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 300;
@@ -8582,7 +8586,8 @@ footer.navigation-menu-footer {
         line-height: 15px;
         color: #FFFFFF;
     }
-    #metodologia .expertise-description {
+    #metodologia .expertise-description,
+    #capacidades .expertise-description {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
