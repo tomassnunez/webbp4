@@ -8444,6 +8444,14 @@ footer.navigation-menu-footer {
     .container-margin {
         margin-top: 0vh;
     }
+    .ui-icon {
+        text-align: center;
+    }
+    .borde-laterales,
+    .borde-centro,
+    .sin-borde-medio {
+        border: none;
+    }
 }
 
 
@@ -8532,7 +8540,8 @@ footer.navigation-menu-footer {
 }
 
 #metodologia .menu-title,
-#capacidades .menu-title {
+#capacidades .menu-title,
+#clientes .menu-title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -8545,7 +8554,8 @@ footer.navigation-menu-footer {
 }
 
 #metodologia .expertise-description,
-#capacidades .expertise-description {
+#capacidades .expertise-description,
+#clientes .expertise-description {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -8566,7 +8576,8 @@ footer.navigation-menu-footer {
         color: #B9D8E9;
     }
     #metodologia .slide-title .menu-title,
-    #capacidades .slide-title .menu-title {
+    #capacidades .slide-title .menu-title,
+    #clientes .slide-title .menu-title {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -8578,7 +8589,8 @@ footer.navigation-menu-footer {
         margin-top: 80px;
     }
     #metodologia .expertise-description,
-    #capacidades .expertise-description {
+    #capacidades .expertise-description,
+    #clientes .expertise-description {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 300;
@@ -8587,7 +8599,8 @@ footer.navigation-menu-footer {
         color: #FFFFFF;
     }
     #metodologia .expertise-description,
-    #capacidades .expertise-description {
+    #capacidades .expertise-description,
+    #clientes .expertise-description {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -8852,6 +8865,28 @@ footer.navigation-menu-footer {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #clientes .clientes-footer-b,
+    #clientes .clientes-footer-m,
+    #clientes .clientes-footer-l {
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+    }
+    #clientes .clientes-footer-b {
+        font-weight: 600;
+    }
+    #clientes .clientes-footer-m {
+        font-weight: 400;
+    }
+    #clientes .clientes-footer-l {
+        font-weight: 300;
+    }
 }
 
 
