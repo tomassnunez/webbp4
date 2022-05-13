@@ -9086,3 +9086,7 @@ footer.navigation-menu-footer {
         overflow: auto !important;
     }
 }
+
+.contact-text a {
+    text-decoration: none;
+}
