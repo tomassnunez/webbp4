@@ -9083,6 +9083,6 @@ footer.navigation-menu-footer {
     html,
     body,
     head {
-        overflow: scroll !important;
+        overflow: auto !important;
     }
 }
