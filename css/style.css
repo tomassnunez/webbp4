@@ -9078,3 +9078,11 @@ footer.navigation-menu-footer {
         height: auto;
     }
 }
+
+@media screen and (max-width: 768px) {
+    html,
+    body,
+    head {
+        overflow: scroll !important;
+    }
+}
