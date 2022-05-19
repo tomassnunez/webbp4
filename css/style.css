@@ -69,6 +69,7 @@
 @import url('https://fonts.googleapis.com/css?family=Teko:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 @font-face {
     font-family: 'Butler';
     src: url('../fonts/butler_regular-webfont.eot');
@@ -98,13 +99,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Butler Stencil Bold'), url('../fonts/Butler_Bold_Stencil.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
 }
 
 html {
@@ -3272,13 +3266,13 @@ a:hover .zooming img {
 .slide-container {
     position: relative;
     padding-top: 9rem;
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
 }
 
 @media (min-width: 992px) {
     .slide-container {
         padding-top: 15vmin;
-        padding-bottom: 7vmin;
+        padding-bottom: 0vmin;
     }
 }
 
@@ -3364,11 +3358,6 @@ a:hover .zooming img {
     .slide-num {
         left: 3.75rem;
     }
-}
-
-.slide-content {
-    min-height: 50vmin;
-    margin-bottom: 3vmin;
 }
 
 .slide-video-container {
@@ -4674,7 +4663,7 @@ video {
 }
 
 .video-item-descr {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -8199,7 +8188,7 @@ footer.navigation-menu-footer {
     padding: 8px;
     border: 2px solid #FF8E09;
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     color: white;
     background-color: #0e3541 !important;
     margin: 1rem;
@@ -8212,7 +8201,7 @@ footer.navigation-menu-footer {
     padding: 8px;
     border: 2px solid #0e3541;
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     color: white;
     background-color: #0e3541 !important;
     margin: 1rem;
@@ -8233,7 +8222,7 @@ footer.navigation-menu-footer {
         margin-top: 70px;
     }
     .contact-text {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 10px;
@@ -8243,7 +8232,7 @@ footer.navigation-menu-footer {
         margin-bottom: 0rem;
     }
     .direction-text {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 10px;
@@ -8287,7 +8276,7 @@ footer.navigation-menu-footer {
 }
 
 .expertise-description {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -8556,7 +8545,7 @@ footer.navigation-menu-footer {
 #metodologia .expertise-description,
 #capacidades .expertise-description,
 #clientes .expertise-description {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -8591,7 +8580,7 @@ footer.navigation-menu-footer {
     #metodologia .expertise-description,
     #capacidades .expertise-description,
     #clientes .expertise-description {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 12px;
@@ -8601,7 +8590,7 @@ footer.navigation-menu-footer {
     #metodologia .expertise-description,
     #capacidades .expertise-description,
     #clientes .expertise-description {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -8640,40 +8629,70 @@ footer.navigation-menu-footer {
 }
 
 .cultura-titulo-orange {
-    position: static;
-    width: 19.313rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 1.5rem;
+    font-size: 40px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
     color: #FF8E09;
 }
 
 .cultura-titulo-green {
-    position: static;
-    width: 19.313rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 1.5rem;
+    font-size: 40px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #00A6A6;
 }
 
 .cultura-descripcion-squares {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 27px;
     display: flex;
     align-items: center;
+    /* Blanco */
     color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     margin: 20px 0px;
+    text-transform: inherit;
+}
+
+.cultura-descripcion-squares2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-transform: inherit;
+    margin: 0;
+}
+
+.cultura-descripcion-squares3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-transform: inherit;
+    margin: 20px 0 90px;
+}
+
+.centrar {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
 }
 
 .cultura-titulo-blue {
@@ -8685,7 +8704,7 @@ footer.navigation-menu-footer {
     /* Cultura/H1 */
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 30px;
     line-height: 1.5rem;
     color: #00a6a6;
@@ -8696,53 +8715,101 @@ footer.navigation-menu-footer {
     margin: 30px 0px;
 }
 
+.cultura-titulo-blue p {
+    font-weight: 300;
+}
+
 .cultura-images-vertical {
-    width: 100%;
+    width: calc(100% - 120px);
     height: auto;
     top: 0px;
     border-radius: 20px;
+    margin: 60px;
+}
+
+.cultura-images-vertical-2 {
+    width: calc(100% - 60px);
+    height: auto;
+    top: 0px;
+    border-radius: 20px;
+    margin: 60px 60px 60px 0;
 }
 
 .cultura-images-horizontal {
-    width: 100%;
+    width: calc(100% - 120px);
     height: auto;
     border-radius: 20px;
+    margin: 60px;
 }
 
 .cultura-right-icon-border {
-    border-bottom: 1px dashed #fff;
-    border-left: 1px dashed #fff;
+    border-bottom: 1px dashed #00A6A6;
+    border-left: 1px dashed #00A6A6;
 }
 
 .cultura-left-icon-border {
-    border-bottom: 1px dashed #fff;
+    border-bottom: 1px dashed #00A6A6;
 }
 
 .cultura-talent-icon-border-right {
-    border-top: 1px dashed #fff;
-    border-bottom: 1px dashed #fff;
-    border-left: 1px dashed #fff;
+    border-top: 1px dashed#00A6A6;
+    border-bottom: 1px dashed #00A6A6;
+    border-left: 1px dashed #00A6A6;
 }
 
 .cultura-talent-icon-border-left {
-    border-top: 1px dashed #fff;
-    border-bottom: 1px dashed #fff;
+    border-top: 1px dashed #00A6A6;
+    border-bottom: 1px dashed #00A6A6;
 }
 
 .cultura-last-border-left {
-    border-left: 1px dashed #fff;
+    border-left: 1px dashed #00A6A6;
 }
 
 .cita {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
     width: 135px;
     height: 27px;
     background: #F54748;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.titulos-beneficios {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 96%;
+    color: #0E3541;
+    margin-bottom: 0;
+}
+
+.titulo-beneficio-item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E3541;
+}
+
+.texto-beneficio-item {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: inherit;
 }
 
 .beneficios-border-bottom {
@@ -8756,6 +8823,10 @@ footer.navigation-menu-footer {
 .fondo-beneficios {
     background-image: url("../img/Cultura/Fondo_Beneficio/Fondo (1).png");
     background-size: cover;
+}
+
+.mt-beneficios {
+    padding-top: 120px;
 }
 
 .fondo-contactanos {
@@ -8781,14 +8852,46 @@ footer.navigation-menu-footer {
 }
 
 .conocenos-titulo {
-    width: 305px;
-    height: 58px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 96%;
-    color: #0E3541 !important;
+    font-size: 40px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: #0E3541;
+    margin-bottom: 30px;
+}
+
+.conocenos-texto {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-transform: inherit;
+}
+
+.derechos-reservados {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0E3541;
+    text-transform: inherit;
+    margin: 0;
+}
+
+.texto-footer {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0E3541;
+    text-transform: inherit;
 }
 
 .beneficio-square-desc {
@@ -8797,7 +8900,7 @@ footer.navigation-menu-footer {
     height: 66px;
     left: 0px;
     top: 78px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -8809,6 +8912,56 @@ footer.navigation-menu-footer {
     order: 1;
     flex-grow: 0;
     margin: 20px 0px;
+}
+
+.margin-60 {
+    margin: 60px 0 0 60px;
+}
+
+.pr-25 {
+    padding-right: 25px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .cultura-titulo-blue {
+        margin: 20px 0px;
+        width: 100%;
+        height: auto;
+    }
+    .cultura-images-vertical,
+    .cultura-images-horizontal,
+    .cultura-images-vertical-2 {
+        width: 100%;
+        margin: 00px;
+    }
+    .cultura-descripcion-squares2 {
+        font-size: 16px;
+    }
+    .cultura-titulo-blue {
+        font-size: 28px;
+    }
+    .margin-60 {
+        margin: 0px;
+    }
+    .pr-25 {
+        padding-right: 0;
+    }
+    .mt-60,
+    .mt-40 {
+        margin-top: 0px;
+    }
+    .align-bp4-info-right {
+        justify-content: center;
+        margin-top: 20px;
+    }
 }
 
 
@@ -8871,7 +9024,7 @@ footer.navigation-menu-footer {
     #clientes .clientes-footer-b,
     #clientes .clientes-footer-m,
     #clientes .clientes-footer-l {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-size: 12px;
         line-height: 15px;
@@ -8911,7 +9064,7 @@ footer.navigation-menu-footer {
 }
 
 .productos-subtitle {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -8933,7 +9086,7 @@ footer.navigation-menu-footer {
 }
 
 .productos-items-texto {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -8944,7 +9097,7 @@ footer.navigation-menu-footer {
 }
 
 .boton-pampa {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -8978,12 +9131,24 @@ footer.navigation-menu-footer {
     align-items: center;
 }
 
+.vertical-center {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
 #contenido-productos {
     margin-top: 100px;
 }
 
 .productos-footer {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -9061,7 +9226,7 @@ footer.navigation-menu-footer {
         color: #000000;
     }
     .boton-pampa {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
