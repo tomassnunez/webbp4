@@ -8969,6 +8969,9 @@ footer.navigation-menu-footer {
         font-size: 30px;
         margin-bottom: 20px;
     }
+    .footer-flash-about {
+        padding-bottom: 0;
+    }
 }
 
 
