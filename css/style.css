@@ -8962,6 +8962,13 @@ footer.navigation-menu-footer {
         justify-content: center;
         margin-top: 20px;
     }
+    .conocenos-texto {
+        font-size: 16px;
+    }
+    .conocenos-titulo {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
 }
 
 
