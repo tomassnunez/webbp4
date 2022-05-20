@@ -50,51 +50,51 @@
             <div class="col-md-6">
                 <div class="container navigation-list-container">
                     <div class="row navigation-menu-item">
-                        <div class="col-md-4 d-none d-md-block">
-                            <hr data-portrait-index="5" class="dottedHR hidden">
+                        <div class="col-md-4">
+                            <hr data-portrait-index="5" class="dottedHR hidden" id="home-linea">
                         </div>
                         <div class="col-md-6">
-                            <a href="index.html" class="navigation-menu-text" data-portrait-index="5">HOME</a>
+                            <a href="index.html" class="navigation-menu-text" data-portrait-index="5" id="home">HOME</a>
                         </div>
                     </div>
                     <div class="row navigation-menu-item">
                         <div class="col-md-4">
-                            <hr data-portrait-index="1" class="dottedHR hidden">
+                            <hr data-portrait-index="1" class="dottedHR hidden" id="capacidades-linea">
                         </div>
                         <div class="col-md-4">
-                            <a href="capacidades.html" class="navigation-menu-text" data-portrait-index="1">CAPACIDADES</a>
+                            <a href="capacidades.html" class="navigation-menu-text" data-portrait-index="1" id="capacidades">CAPACIDADES</a>
                         </div>
                     </div>
                     <div class="row navigation-menu-item">
                         <div class="col-md-4">
-                            <hr data-portrait-index="2" class="dottedHR hidden">
+                            <hr data-portrait-index="2" class="dottedHR hidden" id="metodologia-linea">
                         </div>
                         <div class="col-md-6">
-                            <a href="metodologia.html" class="navigation-menu-text" data-portrait-index="2">METODOLOGÍA</a>
+                            <a href="metodologia.html" class="navigation-menu-text" data-portrait-index="2" id="metodologia">METODOLOGÍA</a>
                         </div>
                     </div>
                     <div class="row navigation-menu-item">
                         <div class="col-md-4">
-                            <hr data-portrait-index="3" class="dottedHR hidden">
+                            <hr data-portrait-index="3" class="dottedHR hidden" id="cultura-linea">
                         </div>
                         <div class="col-md-6">
-                            <a href="cultura.html" class="navigation-menu-text" data-portrait-index="3">CULTURA</a>
+                            <a href="cultura.html" class="navigation-menu-text" data-portrait-index="3" id="cultura">CULTURA</a>
                         </div>
                     </div>
                     <div class="row navigation-menu-item">
                         <div class="col-md-4">
-                            <hr data-portrait-index="4" class="dottedHR hidden">
+                            <hr data-portrait-index="4" class="dottedHR hidden" id="clientes-linea">
                         </div>
                         <div class="col-md-6">
-                            <a href="clientes.html" class="navigation-menu-text" data-portrait-index="4">CLIENTES</a>
+                            <a href="clientes.html" class="navigation-menu-text" data-portrait-index="4" id="clientes">CLIENTES</a>
                         </div>
                     </div>
                     <div class="row navigation-menu-item">
                         <div class="col-md-4">
-                            <hr data-portrait-index="6" class="dottedHR hidden">
+                            <hr data-portrait-index="6" class="dottedHR hidden" id="productos-linea">
                         </div>
                         <div class="col-md-6">
-                            <a href="productos.html" class="navigation-menu-text" data-portrait-index="6">PRODUCTOS</a>
+                            <a href="productos.html" class="navigation-menu-text" data-portrait-index="6" id="productos">PRODUCTOS</a>
                         </div>
                     </div>
                 </div>
@@ -148,6 +148,54 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js "></script>
     <script>
         window.jQuery || document.write('<script src="js/jquery.min.js "><\/script>')
+
+        $(document).ready(function() {
+            var urlAnt = new URL(document.referrer);
+            urlAnt = urlAnt.pathname.split('/');
+            var tamanio = urlAnt.length;
+            var urlFinal = urlAnt[tamanio - 1];
+            urlFinal = urlFinal.split('.')
+
+            switch (urlFinal[0]) {
+                case 'index':
+                case 'menu':
+                    $("#home-linea").removeClass("dottedHR hidden");
+                    $("#home-linea").addClass("dottedHR-selected");
+                    $("#home").removeClass("navigation-menu-text");
+                    $("#home").addClass("navigation-menu-text-selected");
+                    break;
+                case 'capacidades':
+                    $("#capacidades-linea").removeClass("dottedHR hidden");
+                    $("#capacidades-linea").addClass("dottedHR-selected");
+                    $("#capacidades").removeClass("navigation-menu-text");
+                    $("#capacidades").addClass("navigation-menu-text-selected");
+                    break;
+                case 'metodologia':
+                    $("#metodologia-linea").removeClass("dottedHR hidden");
+                    $("#metodologia-linea").addClass("dottedHR-selected");
+                    $("#metodologia").removeClass("navigation-menu-text");
+                    $("#metodologia").addClass("navigation-menu-text-selected");
+                    break;
+                case 'cultura':
+                    $("#cultura-linea").removeClass("dottedHR hidden");
+                    $("#cultura-linea").addClass("dottedHR-selected");
+                    $("#cultura").removeClass("navigation-menu-text");
+                    $("#cultura").addClass("navigation-menu-text-selected");
+                    break;
+                case 'clientes':
+                    $("#clientes-linea").removeClass("dottedHR hidden");
+                    $("#clientes-linea").addClass("dottedHR-selected");
+                    $("#clientes").removeClass("navigation-menu-text");
+                    $("#clientes").addClass("navigation-menu-text-selected");
+                    break;
+                case 'productos':
+                    $("#productos-linea").removeClass("dottedHR hidden");
+                    $("#productos-linea").addClass("dottedHR-selected");
+                    $("#productos").removeClass("navigation-menu-text");
+                    $("#productos").addClass("navigation-menu-text-selected");
+                    break;
+            }
+        });
     </script>
     <script src="js/smoothscroll.js "></script>
     <script src="js/popper.min.js "></script>

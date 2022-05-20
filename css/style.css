@@ -8627,6 +8627,10 @@ footer.navigation-menu-footer {
   17. Cultura
 -------------------------------------------------------------------------------*/
 
+#cultura {
+    overflow: scroll !important;
+}
+
 .align-bp4-info-right {
     display: flex;
     justify-content: flex-end;
@@ -9465,6 +9469,9 @@ footer.navigation-menu-footer {
     .linkedin img {
         width: 30px;
         height: auto;
+    }
+    #producto {
+        background-image: url(../img/Producto-Fondo-Responsive.png);
     }
 }
 
