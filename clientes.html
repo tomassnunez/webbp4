@@ -335,7 +335,14 @@
 
     <script>
         $(document).ready(function() {
-            $('.a-horizontal').show();
+            if ($(document).width() > 768) {
+                $('.a-horizontal').pagepiling({
+                    scrollingSpeed: 280,
+                    loopTop: true,
+                    loopBottom: true,
+                    navigation: false
+                });
+            }
         });
     </script>
 
