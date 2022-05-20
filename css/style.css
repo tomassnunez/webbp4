@@ -9261,8 +9261,12 @@ footer.navigation-menu-footer {
   . Productos
 -------------------------------------------------------------------------------*/
 
-#productos {
+#producto {
     overflow: scroll !important;
+    background-image: url(../img/Producto-Fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .productos-title {
