@@ -8349,28 +8349,33 @@ footer.navigation-menu-footer {
     border-bottom: 1px dashed #fff;
     border-right: 1px dashed #fff;
     margin: auto;
-    padding: 25px;
 }
 
 .top-right-icon-border {
     border-bottom: 1px dashed #fff;
     border-left: 1px dashed #fff;
     margin: auto;
-    padding: 25px;
 }
 
 .bottom-left-icon-border {
     border-top: 1px dashed #fff;
     border-right: 1px dashed #fff;
     margin: auto;
-    padding: 25px;
 }
 
 .bottom-right-icon-border {
     border-top: 1px dashed #fff;
     border-left: 1px dashed #fff;
     margin: auto;
-    padding: 25px;
+}
+
+.cajas {
+    width: 262px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-square {
@@ -8444,6 +8449,22 @@ footer.navigation-menu-footer {
     .borde-centro,
     .sin-borde-medio {
         border: none;
+    }
+    .cajas {
+        width: 202px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cajas {
+        width: 152px;
+        height: 200px;
+        align-items: flex-start;
     }
 }
 
@@ -8537,10 +8558,24 @@ footer.navigation-menu-footer {
 #clientes .menu-title {
     font-family: 'Montserrat';
     font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    color: #B9D8E9;
+    margin-top: 17px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#metodologia .menu-title2,
+#capacidades .menu-title2,
+#clientes .menu-title2 {
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    color: #B9D8E9;
+    color: #EFF7FF;
     margin-top: 17px;
     margin-bottom: 0;
     text-align: left;
@@ -8552,10 +8587,23 @@ footer.navigation-menu-footer {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+}
+
+#metodologia .expertise-description2,
+#capacidades .expertise-description2,
+#clientes .expertise-description2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
-    text-align: left;
     margin-top: 10px;
 }
 
@@ -8619,6 +8667,32 @@ footer.navigation-menu-footer {
     }
     #metodologia #outer {
         justify-content: flex-start;
+    }
+    #metodologia .menu-title2,
+    #capacidades .menu-title2,
+    #clientes .menu-title2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #B9D8E9;
+        margin-top: 17px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    #metodologia .expertise-description2,
+    #capacidades .expertise-description2,
+    #clientes .expertise-description2 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-top: 10px;
     }
 }
 
