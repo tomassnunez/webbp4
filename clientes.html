@@ -49,12 +49,12 @@
             <div class="container-fluid clearfix">
                 <div class="brand">
                     <a href="index.html">
-                        <img src="img\Logos\Logo_BP4_blanco.svg" class="logoBP4">
+                        <img src="img\Logos\Logo_BP4_blanco.png" class="logoBP4">
                     </a>
                 </div>
 
                 <button type="button" class="nav-toggle-btn">
-                    <a href="menu.html" class="animsition-link" data-animsition-out-class="fade-out">
+                    <a href="navigation-panel.html" class="animsition-link" data-animsition-out-class="fade-out">
                         <img src="img\burger.png" alt="nav-menu" class="burger-button-width">
                     </a>
                 </button>
@@ -168,7 +168,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="col-md-5 col-12 float-left center">
-                                            <img src="img/Logos/Logo_BP4_blanco.svg" alt="" class="mb-3 mb-md-0" style="width: 50px; float: left;">
+                                            <img src="img/Logos/Logo_BP4_blanco.png" alt="" class="mb-3 mb-md-0" style="width: 50px; float: left;">
                                             <p class="my-0 ml-3 d-none d-md-block">© 2022 BP4. Todos los derechos reservados.</p>
                                         </div>
                                         <div class="col-12 col-md-3 offset-md-4 float-left">
@@ -335,33 +335,7 @@
 
     <script>
         $(document).ready(function() {
-            $('.a-horizontal').pagepiling({
-                scrollingSpeed: 280,
-                menu: '#menu',
-                direction: 'horizontal',
-                loopTop: true,
-                loopBottom: true,
-                anchors: ['Home', 'Services', 'Projects', 'Clients', 'Contacts'],
-                navigation: false,
-                afterLoad: function(anchorLink, index) {
-                    if (index == 1 || index == 3 || index ==
-                        5) { // Section with dark bacgkrounds
-                        $('body').addClass('dark-horizontal');
-                    } else {
-                        $('body').removeClass('dark-horizontal');
-                    }
-                }
-            });
-
-            $('.a-pp-prev').on('click', function() {
-                $.fn.pagepiling.moveSectionUp();
-            });
-            $('.a-pp-next').on('click', function() {
-                $.fn.pagepiling.moveSectionDown();
-            });
-            $('.switch').click(function() {
-                $(this).toggleClass("switchOn ");
-            })
+            $('.a-horizontal').show();
         });
     </script>
 

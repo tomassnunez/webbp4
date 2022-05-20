@@ -8667,7 +8667,7 @@ footer.navigation-menu-footer {
     }
     html,
     body {
-        overflow: auto !important;
+        overflow: scroll !important;
     }
     #metodologia #outer {
         justify-content: flex-start;
@@ -9497,6 +9497,22 @@ footer.navigation-menu-footer {
     width: 288px;
 }
 
+#slider-metodologia .menu-title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    color: #0E3541;
+}
+
+#slider-metodologia {
+    background-image: url(../img/Metodologia/segundoPanel/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media screen and (max-width: 768px) {
     .tarjetas {
         padding: 5%;
@@ -9558,7 +9574,7 @@ footer.navigation-menu-footer {
     html,
     body,
     head {
-        overflow: auto !important;
+        overflow: scroll !important;
     }
 }
 
