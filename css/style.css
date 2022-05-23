@@ -9344,12 +9344,13 @@ footer.navigation-menu-footer {
 }
 
 .center-img {
-    position: absolute;
+    /*position: absolute;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;*/
+    margin-top: 425px;
 }
 
 .hashtag {
@@ -9744,4 +9745,31 @@ footer.navigation-menu-footer {
 
 .contact-text a {
     text-decoration: none;
+}
+
+.slide-bg,
+.slide-bg>.inside {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-bg {
+    overflow: hidden;
+}
+
+.slide-bg>.inside {
+    background-image: url(../img\Metodologia\segundoPanel/fondo.png);
+}
+
+.slide-bg>.inside {
+    transition: transform .8s ease-in-out;
+    transform: scale(1.08);
+    transition-delay: .8s;
 }
