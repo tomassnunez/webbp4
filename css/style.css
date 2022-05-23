@@ -8828,10 +8828,10 @@ footer.navigation-menu-footer {
         margin-top: 10px;
     }
     #capacidades .slide {
-        background: url("../img/expertise.png") !important;
+        /*background: url("../img/expertise.png") !important;
         background-position: 50% 50% !important;
         background-repeat: no-repeat !important;
-        background-size: cover !important;
+        background-size: cover !important;*/
     }
     .titulo-sliders-metodologia {
         font-size: 26px;

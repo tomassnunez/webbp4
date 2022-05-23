@@ -576,13 +576,14 @@
 
     <script>
         $(document).ready(function() {
-            $('.a-pagepiling').pagepiling({
-                scrollingSpeed: 280,
-                menu: '#menu',
-                loopTop: true,
-                loopBottom: true,
-                navigation: false
-            });
+            if ($(document).width() > 768) {
+                $('.a-horizontal').pagepiling({
+                    scrollingSpeed: 280,
+                    loopTop: true,
+                    loopBottom: true,
+                    navigation: false
+                });
+            }
         });
     </script>
 
