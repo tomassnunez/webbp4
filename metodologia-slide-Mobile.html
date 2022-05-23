@@ -94,36 +94,38 @@
             </div>
 
             <div class="a-vertical full-height d-block d-md-none">
-                <div class="section slide">
-                    <div class="row slide-content">
-                        <div class="container flex center">
-                            <div class="col-12">
+                <div class="section pp-scrollable slide slide" data-anchor="Home">
+                    <div class="section slide">
+                        <div class="row slide-content">
+                            <div class="container flex center">
                                 <div class="col-12">
-                                    <h1 class="titulo-sliders-metodologia">Nuestra empresa</h1>
-                                    <p1 class="texto-sliders-metodologia">Se alinea a metodologías ágiles. Primero charlamos con el cliente y entendemos sus necesidades para definir cómo lo podemos ayudar.</p>
-                                </div>
-                                <div class="col-12 vertical-center">
-                                    <img src="img\Expertise\Icon/abajo.png" class="flechita-rotada">
-                                </div>
-                                <div class="col-12">
-                                    <img src="img/Metodologia/segundoPanel/1.png" alt="" width="100%">
-                                </div>
-                                <div class="col-12">
-                                    <h1 class="titulo-sliders-metodologia">Metodología <br> <b>Delivery</b></h1>
-                                    <p1 class="texto-sliders-metodologia">“Este marco de trabajo recopila toda la experiencia de BP4 a lo largo de los años, de forma que pueda traspasarse entre colaboradores y equipos. Es una herramienta viva de la que todos pueden participar sumando sus
-                                        propias experiencias.”
-                                        </p>
-                                        <p1 class="nombre-sliders-metodologia">Hernán Guevara, Delivery Manager en BP4</p>
-                                </div>
-                                <div class="col-12 vertical-center">
-                                    <img src="img\Expertise\Icon/abajo.png" class="flechita-rotada">
+                                    <div class="col-12">
+                                        <h1 class="titulo-sliders-metodologia">Nuestra empresa</h1>
+                                        <p1 class="texto-sliders-metodologia">Se alinea a metodologías ágiles. Primero charlamos con el cliente y entendemos sus necesidades para definir cómo lo podemos ayudar.</p>
+                                    </div>
+                                    <div class="col-12 vertical-center">
+                                        <img src="img\Expertise\Icon/abajo.png" class="flechita-rotada">
+                                    </div>
+                                    <div class="col-12">
+                                        <img src="img/Metodologia/segundoPanel/1.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-12">
+                                        <h1 class="titulo-sliders-metodologia">Metodología <br> <b>Delivery</b></h1>
+                                        <p1 class="texto-sliders-metodologia">“Este marco de trabajo recopila toda la experiencia de BP4 a lo largo de los años, de forma que pueda traspasarse entre colaboradores y equipos. Es una herramienta viva de la que todos pueden participar sumando
+                                            sus propias experiencias.”
+                                            </p>
+                                            <p1 class="nombre-sliders-metodologia">Hernán Guevara, Delivery Manager en BP4</p>
+                                    </div>
+                                    <div class="col-12 vertical-center">
+                                        <img src="img\Expertise\Icon/abajo.png" class="flechita-rotada">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="section pp-scrollable slide slide2">
+                <div class="section pp-scrollable slide slide2" data-anchor="Projects">
                     <div class="section slide">
                         <div class="row slide-content">
                             <div class="container flex center">
@@ -151,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="section pp-scrollable slide slide3">
+                <div class="section pp-scrollable slide slide3" data-anchor="Services">
                     <div class="section slide">
                         <div class="row slide-content">
                             <div class="container flex center">
@@ -214,9 +216,9 @@
                 scrollingSpeed: 280,
                 menu: '#menu',
                 direction: 'vertical',
-                loopTop: true,
+                loopTop: false,
                 loopBottom: true,
-                anchors: [],
+                anchors: ['Home', 'Projects', 'Services'],
                 navigation: false,
                 afterLoad: function(anchorLink, index) {
                     if (index == 1 || index == 3 || index == 5) { // Section with dark bacgkrounds

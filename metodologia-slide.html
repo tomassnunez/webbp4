@@ -94,38 +94,40 @@
             </div>
 
             <div class="a-horizontal full-height d-none d-md-block">
-                <div class="section slide">
-                    <div class="row slide-content">
-                        <div class="container flex center">
-                            <div class="col-md-3">
-                                <h1 class="slide-title font-teko wow fadeInRight" data-wow-duration="1.2s">
-                                    <span class="menu-title">
-                                        La agilidad estableció un cambio de mentalidad y una nueva cultura organizativa.
-                                    </span>
-                                </h1>
-                            </div>
-                            <div class="col-md-1">
-                                <img src="img\Expertise\Icon\Flecha_Direccion.png" width="100%">
-                            </div>
-                            <div class="col-md-3">
-                                <img src="img/Metodologia/segundoPanel/1.png" alt="" width="100%">
-                            </div>
-                            <div class="col-md-4">
-                                <h1 class="titulo-sliders-metodologia">Metodología <br> <b>Delivery</b></h1>
-                                <p1 class="texto-sliders-metodologia">“Este marco de trabajo recopila toda la experiencia de BP4 a lo largo de los años, de forma que pueda traspasarse entre colaboradores y equipos. Es una herramienta viva de la que todos pueden participar sumando sus propias
-                                    experiencias.”
-                                    </p>
-                                    <p1 class="nombre-sliders-metodologia">Hernán Guevara, Delivery Manager en BP4</p>
-                            </div>
-                            <div class="col-md-1">
-                                <img src="img\Expertise\Icon\Flecha_Direccion.png" width="100%">
-                            </div>
+                <div class="section pp-scrollable slide slide" data-anchor="Home">
+                    <div class="section slide">
+                        <div class="row slide-content">
+                            <div class="container flex center">
+                                <div class="col-md-3">
+                                    <h1 class="slide-title font-teko wow fadeInRight" data-wow-duration="1.2s">
+                                        <span class="menu-title">
+                                            La agilidad estableció un cambio de mentalidad y una nueva cultura organizativa.
+                                        </span>
+                                    </h1>
+                                </div>
+                                <div class="col-md-1">
+                                    <img src="img\Expertise\Icon\Flecha_Direccion.png" width="100%">
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="img/Metodologia/segundoPanel/1.png" alt="" width="100%">
+                                </div>
+                                <div class="col-md-4">
+                                    <h1 class="titulo-sliders-metodologia">Metodología <br> <b>Delivery</b></h1>
+                                    <p1 class="texto-sliders-metodologia">“Este marco de trabajo recopila toda la experiencia de BP4 a lo largo de los años, de forma que pueda traspasarse entre colaboradores y equipos. Es una herramienta viva de la que todos pueden participar sumando sus
+                                        propias experiencias.”
+                                        </p>
+                                        <p1 class="nombre-sliders-metodologia">Hernán Guevara, Delivery Manager en BP4</p>
+                                </div>
+                                <div class="col-md-1">
+                                    <img src="img\Expertise\Icon\Flecha_Direccion.png" width="100%">
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="section pp-scrollable slide slide2">
+                <div class="section pp-scrollable slide slide2" data-anchor="Projects">
                     <div class="section slide">
                         <div class="row slide-content">
                             <div class="container flex center">
@@ -156,7 +158,7 @@
                     </div>
                 </div>
 
-                <div class="section pp-scrollable slide slide3">
+                <div class="section pp-scrollable slide slide3" data-anchor="Services">
                     <div class="section slide">
                         <div class="row slide-content">
                             <div class="container flex center">
@@ -209,9 +211,9 @@
                 scrollingSpeed: 280,
                 menu: '#menu',
                 direction: 'horizontal',
-                loopTop: true,
+                loopTop: false,
                 loopBottom: true,
-                anchors: [],
+                anchors: ['Home', 'Projects', 'Services'],
                 navigation: false,
                 afterLoad: function(anchorLink, index) {
                     if (index == 1 || index == 3 || index == 5) { // Section with dark bacgkrounds
