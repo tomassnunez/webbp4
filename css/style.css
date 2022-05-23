@@ -8712,6 +8712,10 @@ footer.navigation-menu-footer {
     color: #0E3541;
 }
 
+.titulo-sliders-metodologia b {
+    font-weight: 600;
+}
+
 .texto-sliders-metodologia {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -8840,6 +8844,11 @@ footer.navigation-menu-footer {
     .nombre-sliders-metodologia {
         font-size: 12px;
         line-height: 15px;
+    }
+    .flechita-rotada {
+        width: 65px;
+        height: auto;
+        margin-top: 50px;
     }
 }
 
@@ -9592,6 +9601,13 @@ footer.navigation-menu-footer {
 }
 
 .vertical-center {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vertical-center2 {
     display: flex !important;
     align-items: flex-start;
     flex-direction: column;
