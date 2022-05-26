@@ -4766,7 +4766,7 @@ video {
         padding-right: 2rem;
         margin-top: 18.962963vmin;
         text-align: center;
-        transform: translate(0, -50%);
+        transform: translate(0, -40%);
     }
     .video-text-item:after {
         top: 50%;
@@ -8546,6 +8546,37 @@ footer.navigation-menu-footer {
     .cajas-par {
         padding-left: 0px;
     }
+    .borde-dashed {
+        width: 90%;
+        border: 3px dashed #485683;
+        height: 122px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    #metodologia .borde-dashed {
+        width: 90%;
+        border: 3px dashed #485683;
+        border-radius: 10px;
+        padding: 20px;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        min-height: 240px;
+    }
+    #capacidades .borde-dashed {
+        width: 100%;
+        border-radius: 10px;
+        padding: 20px 0px 20px 20px;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 20px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        min-height: 165px;
+    }
 }
 
 
@@ -8793,6 +8824,7 @@ footer.navigation-menu-footer {
         float: left;
         border: none;
         margin: 0;
+        padding-left: 0;
     }
     html,
     body {
@@ -8849,6 +8881,10 @@ footer.navigation-menu-footer {
         width: 65px;
         height: auto;
         margin-top: 50px;
+    }
+    #capacidades #outer,
+    #metodologia #outer {
+        padding: 0;
     }
 }
 
@@ -9025,7 +9061,7 @@ footer.navigation-menu-footer {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 37px;
     line-height: 96%;
     color: #0E3541;
     margin-bottom: 0;
@@ -9245,6 +9281,17 @@ footer.navigation-menu-footer {
     margin: 30px 0;
 }
 
+.icon-size-clientes3 img {
+    /* height: 7.375rem;
+    width: 9.375rem; */
+    width: 80px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    margin: 30px 0;
+}
+
 .clientes-background {
     background-image: url("../img/Clientes/Principal/Fondo/Clientes.png");
     transform: scale(1);
@@ -9262,7 +9309,7 @@ footer.navigation-menu-footer {
     height: auto;
 }
 
-.footer-clientes {
+.footer-clientes p-40 {
     border-top: 1px solid #B9D8E9;
     padding: 50px 0;
 }
@@ -9740,6 +9787,10 @@ footer.navigation-menu-footer {
     body,
     head {
         overflow: scroll !important;
+    }
+    .p-40 {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
