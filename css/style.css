@@ -287,6 +287,22 @@ html>body .underline:hover {
     #capacidades2 .video-container {
         z-index: 0;
     }
+    #capacidades2 .linea-footer {
+        border-top: 1px solid #B9D8E9;
+        width: 100%;
+        padding: 30px 0;
+    }
+    #capacidades2 .clientes-footer-b,
+    .clientes-footer-m,
+    .clientes-footer-l {
+        margin-bottom: 5px;
+        color: white;
+    }
+    .fondo-modal-mobile {
+        background-size: cover;
+        background-image: url("../img/fondo-modal.png");
+        background-repeat: no-repeat;
+    }
 }
 
 .full-height {
@@ -6203,10 +6219,11 @@ a:hover .project-metro-photo img {
 }
 
 .footer-flash-about {
-    padding-top: 16.66666667vmin;
-    padding-bottom: 13.51851852vmin;
+    /* padding-top: 16.66666667vmin;
+    padding-bottom: 13.51851852vmin;*/
     font-size: 1.875rem;
     line-height: 1.6;
+    height: 705px;
 }
 
 .home-flash .footer-flash-about {
@@ -6271,6 +6288,9 @@ a:hover .project-metro-photo img {
         padding-top: 3.125rem;
         padding-bottom: 4rem;
     }
+    .footer-flash-about {
+        height: 715px;
+    }
 }
 
 .footer-flash .copyright {
@@ -6293,7 +6313,8 @@ a:hover .project-metro-photo img {
     margin-bottom: 1rem;
 }
 
-.nav-inline a {
+.nav-inline a,
+.pasar-slide {
     cursor: pointer;
 }
 
@@ -8288,7 +8309,7 @@ footer.navigation-menu-footer {
 
 @media screen and (max-width: 768px) {
     .navigation-menu-item {
-        margin-top: 70px;
+        margin-top: 55px;
     }
     .contact-text {
         font-family: 'Inter', sans-serif;
@@ -8315,6 +8336,29 @@ footer.navigation-menu-footer {
     #navegacion .outer {
         justify-content: flex-start;
         margin-left: 15px;
+    }
+    .navigation-list-container {
+        margin-top: 55px;
+    }
+    .navigation-menu-text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .navigation-menu-text-selected {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .navigation-background {
+        background-color: none;
+        background: url("../img/menu-resonsive.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .navigation-panel-right {
+        margin-top: -50px;
     }
 }
 
@@ -8373,7 +8417,7 @@ footer.navigation-menu-footer {
 }
 
 .expertise-carousel-item {
-    background-color: white;
+    background-color: transparent;
     border-radius: 40px !important;
     top: 50%;
 }
@@ -9252,6 +9296,10 @@ footer.navigation-menu-footer {
     .img-linkedin {
         margin-top: 40px;
     }
+    .fondo-contactanos {
+        background-image: url("../img/Cultura/Fondo Contactanos/ContáctanosMobile.png") !important;
+        background-size: cover !important;
+    }
 }
 
 
@@ -9557,9 +9605,9 @@ footer.navigation-menu-footer {
 #producto {
     overflow: scroll !important;
     background-image: url(../img/Producto-Fondo.png);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
 }
 
 .productos-title {
@@ -9637,7 +9685,8 @@ footer.navigation-menu-footer {
     padding: 0;
 }
 
-.center {
+.center,
+.center-desktop {
     display: flex;
     align-items: center;
 }
@@ -9668,7 +9717,7 @@ footer.navigation-menu-footer {
 }
 
 #contenido-productos {
-    margin-top: 100px;
+    margin-top: 155px;
 }
 
 .productos-footer {
@@ -9718,7 +9767,8 @@ footer.navigation-menu-footer {
     color: #0E3541;
 }
 
-#slider-metodologia {
+#slider-metodologia,
+#algo {
     background-image: url(../img/Metodologia/segundoPanel/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -9726,9 +9776,14 @@ footer.navigation-menu-footer {
 }
 
 @media screen and (max-width: 768px) {
+    #contenido-productos .content-title {
+        margin-bottom: 0;
+    }
     .tarjetas {
         padding: 5%;
         flex-wrap: wrap;
+        margin-top: 200px;
+        margin-bottom: 0;
     }
     .content-title {
         margin-bottom: 150px;
@@ -9737,7 +9792,14 @@ footer.navigation-menu-footer {
         margin-bottom: 100px;
     }
     .img-phone {
-        width: 100%;
+        height: 386px;
+        width: auto;
+    }
+    .center-mobile {
+        display: flex !important;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     .productos-title {
         font-size: 30px;
@@ -9780,6 +9842,9 @@ footer.navigation-menu-footer {
     #producto {
         background-image: url(../img/Producto-Fondo-Responsive.png);
     }
+    .d-none {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -9791,6 +9856,9 @@ footer.navigation-menu-footer {
     .p-40 {
         padding-left: 40px;
         padding-right: 40px;
+    }
+    .center-desktop {
+        align-items: flex-start;
     }
 }
 
@@ -9823,4 +9891,11 @@ footer.navigation-menu-footer {
     transition: transform .8s ease-in-out;
     transform: scale(1.08);
     transition-delay: .8s;
+}
+
+.pp-tableCell {
+    background-image: url(../img/Metodologia/segundoPanel/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

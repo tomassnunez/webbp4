@@ -62,7 +62,7 @@
             </header>
 
             <div class="horizontal-nav">
-                <div class="container">
+                <div class="container p-40">
                     <div class="row">
                         <div class="col-md-1 px-0">
                             <div class="switch-button-div">
@@ -103,7 +103,7 @@
                                         <h1 class="titulo-sliders-metodologia">Nuestra empresa</h1>
                                         <p1 class="texto-sliders-metodologia">Se alinea a metodologías ágiles. Primero charlamos con el cliente y entendemos sus necesidades para definir cómo lo podemos ayudar.</p>
                                     </div>
-                                    <div class="col-12 px-0 vertical-center">
+                                    <div class="col-12 px-0 vertical-center" onclick="avanzar()">
                                         <img src="img\Expertise\Icon/abajo.png" class="flechita-rotada">
                                     </div>
                                     <div class="col-12 px-0">
@@ -116,7 +116,7 @@
                                             </p>
                                             <p1 class="nombre-sliders-metodologia">Hernán Guevara, Delivery Manager en BP4</p>
                                     </div>
-                                    <div class="col-12 px-0 vertical-center">
+                                    <div class="col-12 px-0 vertical-center" onclick="avanzar()">
                                         <img src="img\Expertise\Icon/abajo.png" class="flechita-rotada">
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                                             </p>
                                             <p1 class="nombre-sliders-metodologia">Vanina Quevedo, People Ops Manager en BP4</p>
                                     </div>
-                                    <div class="col-12 px-0 vertical-center">
+                                    <div class="col-12 px-0 vertical-center" onclick="avanzar()">
                                         <img src="img\Expertise\Icon/abajo.png" class="flechita-rotada">
                                     </div>
                                     <div class="col-12 px-0">
@@ -164,7 +164,7 @@
                                             </p>
                                             <p1 class="nombre-sliders-metodologia">Alejandro Melinsky, Head of Sales en BP4</p>
                                     </div>
-                                    <div class="col-12 px-0 vertical-center">
+                                    <div class="col-12 px-0 vertical-center" onclick="avanzar()">
                                         <img src="img\Expertise\Icon/abajo.png" class="flechita-rotada">
                                     </div>
                                     <div class="col-12 px-0">
@@ -236,6 +236,10 @@
                 $.fn.pagepiling.moveSectionDown();
             });
         });
+
+        function avanzar() {
+            $.fn.pagepiling.moveSectionDown();
+        }
     </script>
 
 </body>
