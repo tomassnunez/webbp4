@@ -9767,8 +9767,7 @@ footer.navigation-menu-footer {
     color: #0E3541;
 }
 
-#slider-metodologia,
-#algo {
+#slider-metodologia {
     background-image: url(../img/Metodologia/segundoPanel/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -9893,8 +9892,36 @@ footer.navigation-menu-footer {
     transition-delay: .8s;
 }
 
-.pp-tableCell {
-    background-image: url(../img/Metodologia/segundoPanel/fondo.png);
+#primer-slide .pp-tableCell {
+    background-image: url(../img/Metodologia/segundoPanel/fondo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#segundo-slide .pp-tableCell {
+    background-image: url(../img/Metodologia/segundoPanel/fondo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tercer-slide .pp-tableCell {
+    background-image: url(../img/Metodologia/segundoPanel/fondo3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#primer-slideM .pp-tableCell {
+    background-image: url(../img/Metodologia/segundoPanel/fondo1Mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tercer-slideM .pp-tableCell {
+    background-image: url(../img/Metodologia/segundoPanel/fondo3Mobile.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
