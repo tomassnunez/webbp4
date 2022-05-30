@@ -9926,3 +9926,10 @@ footer.navigation-menu-footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#index {
+    background-image: url(../img/Metodologia/segundoPanel/fondo3Mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
