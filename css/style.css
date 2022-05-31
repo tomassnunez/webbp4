@@ -219,7 +219,8 @@ html>body .underline:hover {
     padding-right: 5px;
 }
 
-#capacidades2 .video-container {
+#capacidades2 .video-container,
+#clientes .video-container {
     z-index: 1;
 }
 
@@ -284,13 +285,14 @@ html>body .underline:hover {
         -moz-border-radius: 0px !important;
         border-radius: 0px !important;
     }
-    #capacidades2 .video-container {
+    #capacidades2 .video-container,
+    #clientes .video-container {
         z-index: 0;
     }
     #capacidades2 .linea-footer {
         border-top: 1px solid #B9D8E9;
         width: 100%;
-        padding: 30px 0;
+        padding: 15px 0 5px;
     }
     #capacidades2 .clientes-footer-b,
     .clientes-footer-m,
@@ -8774,7 +8776,8 @@ footer.navigation-menu-footer {
     margin-top: 10px;
 }
 
-#capacidades .slide {
+#capacidades .slide,
+#clientes .slide {
     background: none !important;
 }
 
@@ -9711,6 +9714,13 @@ footer.navigation-menu-footer {
     justify-content: center;
 }
 
+.vertical-center3 {
+    display: flex !important;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .bottom {
     display: flex;
     align-items: flex-end;
@@ -9920,7 +9930,7 @@ footer.navigation-menu-footer {
     background-size: cover;
 }
 
-#tercer-slideM .pp-tableCell {
+#cuarto-slideM .pp-tableCell {
     background-image: url(../img/Metodologia/segundoPanel/fondo3Mobile.png);
     background-position: center;
     background-repeat: no-repeat;
