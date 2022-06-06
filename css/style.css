@@ -8313,6 +8313,10 @@ footer.navigation-menu-footer {
     .navigation-menu-item {
         margin-top: 55px;
     }
+    .navigation-menu-item:first-child,
+    .navigation-list-container {
+        margin-top: 0px;
+    }
     .contact-text {
         font-family: 'Inter', sans-serif;
         font-style: normal;
@@ -8340,7 +8344,7 @@ footer.navigation-menu-footer {
         margin-left: 15px;
     }
     .navigation-list-container {
-        margin-top: 55px;
+        margin-top: 0px;
     }
     .navigation-menu-text {
         font-weight: 400;
@@ -9869,6 +9873,9 @@ footer.navigation-menu-footer {
     .center-desktop {
         align-items: flex-start;
     }
+    .cerrar {
+        margin: 30px 0 !important;
+    }
 }
 
 .contact-text a {
@@ -9942,4 +9949,22 @@ footer.navigation-menu-footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.cerrar {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+.pos-menu {
+    align-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .pos-menu {
+        align-content: initial;
+    }
 }
