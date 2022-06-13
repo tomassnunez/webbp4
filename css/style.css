@@ -4762,6 +4762,11 @@ video {
     letter-spacing: .25em;
 }
 
+.boton-responsive img {
+    width: 60px !important;
+    margin-top: 30px;
+}
+
 @media screen and (min-width: 768px) {
     .video-text-container {
         width: 59.72222222vmin;
