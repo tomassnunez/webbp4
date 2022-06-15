@@ -231,15 +231,7 @@
       Piling Play Video
     -------------------------------------------------------------------------------*/
 
-    $('.a-video-play').on('click', function() {
-        if ($(this).hasClass('active')) {
-            $('.video-container').fadeOut();
-            $(this).removeClass('active').html('<i class="icon ion-ios-play"></i>');
-        } else {
-            $('.video-container').fadeIn();
-            $(this).addClass('active').html('<i class="icon ion-ios-pause"></i>');
-        }
-    });
+
 
     function resizeVideo() {
         var width = $(window).width();
@@ -376,10 +368,17 @@
         if (width < 768) {
             $('.video-text-container').addClass('owl-carousel owl-theme');
             $('.video-text-container').owlCarousel({
-                smartSpeed: 750,
+                smartSpeed: 1000,
                 dots: true,
                 nav: false,
-                items: 1
+                items: 1,
+                lazyLoad: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 7000,
+                autoplayHoverPause: true,
+                mouseDrag: true,
+                touchDrag: true
             });
             $('.video-text-container').on('translated.owl.carousel', function(e) {
                 $(this).find('.video-text-item.is-active').removeClass('is-active');

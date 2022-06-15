@@ -258,6 +258,18 @@
     <script src="js/script.js"></script>
 
     <script>
+        $(document).ready(function() {
+            var width = $(window).width();
+
+            if (width < 768) {
+                $('.owl-dot').on('click', function() {
+                    owl.trigger('stop.owl.autoplay');
+                    setTimeout(() => {
+                        owl.trigger('stop.owl.autoplay');
+                    }, "7000")
+                })
+            }
+        });
     </script>
 
 </body>
