@@ -9415,7 +9415,7 @@ footer.navigation-menu-footer {
     height: auto;
 }
 
-.footer-clientes p-40 {
+.footer-clientes footer-bg p-40 {
     border-top: 1px solid #B9D8E9;
     padding: 50px 0;
 }
@@ -10046,6 +10046,6 @@ footer.navigation-menu-footer {
     }
 }
 
-footer {
-    background-color: transparent;
+.footer-bg {
+    background: transparent !important;
 }
