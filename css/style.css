@@ -8566,6 +8566,20 @@ footer.navigation-menu-footer {
     text-align: left;
 }
 
+.hover-clientes {
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.hover-clientes:hover {
+    background: rgba(185, 216, 233, 0.1);
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 1400px) {
     .container-margin {
         margin-top: 0vh;
@@ -8590,6 +8604,12 @@ footer.navigation-menu-footer {
     }
 }
 
+@media screen and (max-width: 1500px) {
+    .hover-clientes {
+        height: 100px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .cajas {
         width: 152px;
@@ -8610,15 +8630,34 @@ footer.navigation-menu-footer {
         justify-content: center;
         border-radius: 10px;
     }
-    #metodologia .borde-dashed {
-        width: 90%;
-        border: 3px dashed #485683;
-        border-radius: 10px;
+    #metodologia .borde-dashedL {
+        width: 100%;
         padding: 20px;
+        border-radius: 0px;
         height: auto;
         display: flex;
         align-items: flex-start;
         min-height: 240px;
+        border: none;
+        border-bottom: 1px dashed #fff;
+        border-left: 1px dashed #fff;
+        margin: auto;
+    }
+    #metodologia .borde-dashedR {
+        width: 100%;
+        padding: 20px;
+        border-radius: 0px;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        min-height: 240px;
+        border: none;
+        border-bottom: 1px dashed #fff;
+        border-right: 1px dashed #fff;
+        margin: auto;
+    }
+    #metodologia .bbn {
+        border-bottom: none;
     }
     #capacidades .borde-dashed {
         width: 100%;
@@ -8797,6 +8836,7 @@ footer.navigation-menu-footer {
     font-size: 30px;
     line-height: 37px;
     color: #0E3541;
+    margin-bottom: 30px;
 }
 
 .titulo-sliders-metodologia b {
@@ -8825,6 +8865,7 @@ footer.navigation-menu-footer {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -8941,6 +8982,11 @@ footer.navigation-menu-footer {
     #capacidades #outer,
     #metodologia #outer {
         padding: 0;
+    }
+    .outer2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
 }
 
@@ -9698,7 +9744,8 @@ footer.navigation-menu-footer {
 }
 
 .center,
-.center-desktop {
+.center-desktop,
+.center-metodologias {
     display: flex;
     align-items: center;
 }
@@ -9709,7 +9756,8 @@ footer.navigation-menu-footer {
     justify-content: center;
 }
 
-.vertical-center {
+.vertical-center,
+.vertical-center-metodologias {
     display: flex !important;
     align-items: center;
     flex-direction: column;
@@ -9765,7 +9813,7 @@ footer.navigation-menu-footer {
 .linea-footer {
     border-top: 1px solid #B9D8E9;
     width: 100%;
-    padding: 60px 0;
+    padding: 0px 0 50px;
 }
 
 .content-title {
@@ -9777,20 +9825,25 @@ footer.navigation-menu-footer {
     width: 288px;
 }
 
-#slider-metodologia .menu-title {
+#nuestras-metodologias .menu-title {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 39px;
     color: #0E3541;
+    text-align: center;
 }
 
-#slider-metodologia {
+#nuestras-metodologias {
     background-image: url(../img/Metodologia/segundoPanel/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.section-metodologia {
+    margin: 100px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -9862,6 +9915,20 @@ footer.navigation-menu-footer {
     }
     .d-none {
         display: none !important;
+    }
+    .center-metodologias {
+        display: initial;
+    }
+    #nuestras-metodologias .menu-title {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    #nuestras-metodologias {
+        background-image: url(../img/Metodologia/segundoPanel/fondoMobile.png);
+    }
+    .section-metodologia {
+        margin: 50px 0;
     }
 }
 
@@ -9968,9 +10035,17 @@ footer.navigation-menu-footer {
     align-content: flex-start;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 768px) {
     .pos-menu-footer {
         position: absolute;
         bottom: 16%;
     }
+}
+
+footer {
+    background-color: transparent;
 }
