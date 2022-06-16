@@ -39,6 +39,9 @@
 
     <!-- Main CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
@@ -79,11 +82,11 @@
                 <div class="menu-main" id="accordion">
                     <ul>
                         <li><a data-text="Home" href="index.html">Home</a></li>
-                        <li><a data-text="Home" href="capacidades.html" class="activo">Capacidades</a></li>
-                        <li><a data-text="Home" href="metodologia.html">Metodología</a></li>
-                        <li><a data-text="Home" href="cultura.html">Cultura</a></li>
-                        <li><a data-text="Home" href="clientes.html">Clientes</a></li>
-                        <li><a data-text="Home" href="productos.html">Productos</a></li>
+                        <li><a data-text="Capacidades" href="capacidades.html" class="activo">Capacidades</a></li>
+                        <li><a data-text="Metodología" href="metodologia.html">Metodología</a></li>
+                        <li><a data-text="Cultura" href="cultura.html">Cultura</a></li>
+                        <li><a data-text="Clientes" href="clientes.html">Clientes</a></li>
+                        <li><a data-text="Productos" href="productos.html">Productos</a></li>
                     </ul>
                 </div>
 
@@ -98,8 +101,8 @@
             </div>
         </header>
 
-        <div class="video-container a-video" data-vimeo-width="640" data-vimeo-height="360"> <video width="100%" height="100%" autoplay loop preload muted playsinline style="background-image: url(img/expertise.png);">
-            <source src="video/capacidades.mp4" type="video/mp4">
+        <div class="video-container a-video" data-vimeo-width="640" data-vimeo-height="360"> <video width="100%" height="100%" autoplay loop preload muted playsinline>
+            <source src="video/video-capacidades.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video></div>
 
@@ -121,7 +124,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-6 top-left-icon-border pointer border-mobile">
+                                        <div class="col-md-6 top-left-icon-border pointer border-mobile" type="button" data-toggle="modal" data-target="#modales" onclick="inicioModal(0)">
                                             <div class="software-icon cajas cajas-imp borde-dashed">
                                                 <img src="img\software_factory.svg" alt="software factory" class="icon-size">
                                                 <p class="menu-title2">
@@ -129,7 +132,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 top-right-icon-border pointer border-mobile">
+                                        <div class="col-md-6 top-right-icon-border pointer border-mobile" type="button" data-toggle="modal" data-target="#modales" onclick="inicioModal(1)">
                                             <div class="ui-icon cajas cajas-par borde-dashed">
                                                 <img src="img\ux.svg" alt="software factory" class="icon-size">
                                                 <p class="menu-title2">
@@ -139,7 +142,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6 bottom-left-icon-border pointer border-mobile">
+                                        <div class="col-md-6 bottom-left-icon-border pointer border-mobile" type="button" data-toggle="modal" data-target="#modales" onclick="inicioModal(2)">
                                             <div class="agile-icon cajas cajas-imp borde-dashed">
                                                 <img src="img\agile_aproach.svg" alt="software factory" class="icon-size">
                                                 <p class="menu-title2">
@@ -148,7 +151,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-6 bottom-right-icon-border pointer border-mobile">
+                                        <div class="col-md-6 bottom-right-icon-border pointer border-mobile" type="button" data-toggle="modal" data-target="#modales" onclick="inicioModal(3)">
                                             <div class="cloud-icon cajas cajas-par borde-dashed">
                                                 <img src="img\cloud.svg" alt="software factory" class="icon-size">
                                                 <p class="menu-title2">
@@ -164,101 +167,103 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-carousel-content modal-responsive" role="document">
-                    <div class="modal-content modal-card-height  fondo-modal-mobile">
-                        <div class="modal-header" style="border-bottom: unset;">
+            <div class="modal fade" id="modales" tabindex="-1" aria-labelledby="modales" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content fondo-modal-mobile">
+                        <div class="modal-header pb-0 ">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <img src="img/Capacidades/cerrar.svg" alt="">
-                        </button>
+                                <img src="img/Capacidades/cerrar.svg" alt="">
+                            </button>
                         </div>
-                        <div class="modal-body center">
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div id="softwareFactory" class="carousel-item expertise-carousel-item">
-                                        <div class="container flex flex-center">
-                                            <div class="col-md-4 vertical-center d-none d-md-block">
-                                                <img src="img/Capacidades/software.svg" class="expertise-img">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="text-square">
-                                                    <div class="menu-title-capacidades">
-                                                        SOFTWARE
-                                                        <br class="d-none d-md-block"> FACTORY
-                                                    </div>
-                                                    <div class="expertise-description-capacidades">
-                                                        Desarrollamos soluciones a medida, siguiendo procesos internos y metodologías ágiles, siempre teniendo en cuenta la cultura de trabajo de nuestros clientes. Nuestros equipos están conformados por profesionales con diferentes skills, Business Owners, Scrum
-                                                        Masters, PMs, Analistas Funcionales, QAs, Devs, expertos en UX/CX, que trabajan con responsabilidad individual y colectiva, coordinados y comunicados entre sí, todos persiguiendo un mismo objetivo!
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div class="modal-body">
+                            <!-- <div class="container flex flex-center px-0 mb-4">
+                                <div class="col-md-5 col-12 vertical-center d-none d-md-block">
+                                    <img src="img/Capacidades/software.svg" class="expertise-img">
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="text-square">
+                                        <div class="menu-title-capacidades">
+                                            SOFTWARE
+                                            <br class="d-none d-md-block"> FACTORY
+                                        </div>
+                                        <div class="expertise-description-capacidades">
+                                            Desarrollamos soluciones a medida, siguiendo procesos internos y metodologías ágiles, siempre teniendo en cuenta la cultura de trabajo de nuestros clientes. Nuestros equipos están conformados por profesionales con diferentes skills, Business Owners, Scrum
+                                            Masters, PMs, Analistas Funcionales, QAs, Devs, expertos en UX/CX, que trabajan con responsabilidad individual y colectiva, coordinados y comunicados entre sí, todos persiguiendo un mismo objetivo!
                                         </div>
                                     </div>
-                                    <div id="UX" class="carousel-item expertise-carousel-item">
-                                        <div class="container flex flex-center">
-                                            <div class="col-md-4 vertical-center d-none d-md-block">
-                                                <img src="img/Capacidades/ux-ui.svg" class="expertise-img">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="text-square">
-                                                    <div class="menu-title-capacidades" style="color: #0E3541;">
-                                                        UX/UI
-                                                        <br class="d-none d-md-block"> DESIGN
-                                                    </div>
-                                                    <div class="expertise-description-capacidades" style="color: black;">
-                                                        No sólo creamos sitios webs, sistemas, apps., sino que además creamos experiencias! Proveer experiencias de usuario placenteras garantiza a las organizaciones potenciar la fidelidad de sus clientes, y así, aumentar las rentabilidades.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cloudDev" class="carousel-item expertise-carousel-item">
-                                        <div class="container flex flex-center">
-                                            <div class="col-md-4 vertical-center d-none d-md-block">
-                                                <img src="img/Capacidades/cloud.svg" class="expertise-img">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="text-square">
-                                                    <div class="menu-title-capacidades" style="color: #0E3541;">
-                                                        CLOUD
-                                                        <br class="d-none d-md-block"> DEVELOPMENT
-                                                    </div>
-                                                    <div class="expertise-description-capacidades" style="color: black;">
-                                                        Somos expertos en piezas de software! Y trabajamos mucho para crear aquellas piezas pensadas para funcionar a través de internet coordinando plataformas de nube pública de terceros, de nube privada o en casa. Este proceso nos da la posibilidad de alcanzar
-                                                        los mejores resultados y eso nos hace sentir motivados.
-                                                    </div>
-                                                </div>
-                                            </div>
+                                </div>
+                            </div>-->
 
-                                        </div>
+                            <div class="modal-capacidades">
+                                <div class="container flex flex-center px-0 mb-4">
+                                    <div class="col-md-5 col-12 vertical-center d-none d-md-block">
+                                        <img src="img/Capacidades/software.svg" class="expertise-img">
                                     </div>
-                                    <div id="agile" class="carousel-item expertise-carousel-item">
-                                        <div class="container flex flex-center">
-                                            <div class="col-md-4 vertical-center d-none d-md-block">
-                                                <img src="img/Capacidades/agile.svg" class="expertise-img">
+                                    <div class="col-md-6 col-12">
+                                        <div class="text-square">
+                                            <div class="menu-title-capacidades">
+                                                SOFTWARE
+                                                <br class="d-none d-md-block"> FACTORY
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="text-square">
-                                                    <div class="menu-title-capacidades" style="color: #0E3541;">
-                                                        AGILE
-                                                        <br class="d-none d-md-block"> APPROACH
-                                                    </div>
-                                                    <div class="expertise-description-capacidades" style="color: black;">
-                                                        La entrega de valor es uno de nuestros principales pilares. Lo que hacemos es incrementarlo desde el comienzo del proyecto en iteraciones cortas. Nos gusta trabajar colaborando, equivocarnos rápido y adaptarnos a esos cambios. La idea es entregar el producto
-                                                        y aprender para mejorar en cada iteración!
-                                                    </div>
-                                                </div>
+                                            <div class="expertise-description-capacidades">
+                                                Desarrollamos soluciones a medida, siguiendo procesos internos y metodologías ágiles, siempre teniendo en cuenta la cultura de trabajo de nuestros clientes. Nuestros equipos están conformados por profesionales con diferentes skills, Business Owners, Scrum
+                                                Masters, PMs, Analistas Funcionales, QAs, Devs, expertos en UX/CX, que trabajan con responsabilidad individual y colectiva, coordinados y comunicados entre sí, todos persiguiendo un mismo objetivo!
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="carousel-control-prev carousel-left-arrow d-none d-md-block vertical-center" href="#carouselExampleControls" role="button" data-slide="prev">
-                                        <img src="img/Expertise/Icon/Icon_Izquierda.png" aria-hidden="true" class="carousel-arrow"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next carousel-right-arrow d-none d-md-block vertical-center" href="#carouselExampleControls" role="button" data-slide="next">
-                                        <img src="img/Expertise/Icon/Flecha_Direccion.png" aria-hidden="true" class="carousel-arrow"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
+                                </div>
+
+                                <div class="container flex flex-center px-0 mb-4">
+                                    <div class="col-md-5 col-12 vertical-center d-none d-md-block">
+                                        <img src="img/Capacidades/ux-ui.svg" class="expertise-img">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="text-square">
+                                            <div class="menu-title-capacidades" style="color: #0E3541;">
+                                                UX/UI
+                                                <br class="d-none d-md-block"> DESIGN
+                                            </div>
+                                            <div class="expertise-description-capacidades" style="color: black;">
+                                                No sólo creamos sitios webs, sistemas, apps., sino que además creamos experiencias! Proveer experiencias de usuario placenteras garantiza a las organizaciones potenciar la fidelidad de sus clientes, y así, aumentar las rentabilidades.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container flex flex-center px-0 mb-4">
+                                    <div class="col-md-5 col-12 vertical-center d-none d-md-block">
+                                        <img src="img/Capacidades/agile.svg" class="expertise-img">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="text-square">
+                                            <div class="menu-title-capacidades" style="color: #0E3541;">
+                                                AGILE
+                                                <br class="d-none d-md-block"> APPROACH
+                                            </div>
+                                            <div class="expertise-description-capacidades" style="color: black;">
+                                                La entrega de valor es uno de nuestros principales pilares. Lo que hacemos es incrementarlo desde el comienzo del proyecto en iteraciones cortas. Nos gusta trabajar colaborando, equivocarnos rápido y adaptarnos a esos cambios. La idea es entregar el producto
+                                                y aprender para mejorar en cada iteración!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container flex flex-center px-0 mb-4">
+                                    <div class="col-md-5 col-12 vertical-center d-none d-md-block">
+                                        <img src="img/Capacidades/cloud.svg" class="expertise-img">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="text-square">
+                                            <div class="menu-title-capacidades" style="color: #0E3541;">
+                                                CLOUD
+                                                <br class="d-none d-md-block"> DEVELOPMENT
+                                            </div>
+                                            <div class="expertise-description-capacidades" style="color: black;">
+                                                Somos expertos en piezas de software! Y trabajamos mucho para crear aquellas piezas pensadas para funcionar a través de internet coordinando plataformas de nube pública de terceros, de nube privada o en casa. Este proceso nos da la posibilidad de alcanzar
+                                                los mejores resultados y eso nos hace sentir motivados.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -318,6 +323,8 @@
                     $.fn.pagepiling.moveSectionDown();
                 });
             }
+
+
         });
         /*
         $("#capacidades-terjetas").click(function() {
@@ -330,6 +337,53 @@
             $("#capacidades2").addClass("modal-open");
             //$("body").append('<div class="modal-backdrop fade show"></div>');
         });*/
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.modal-capacidades').addClass('owl-carousel owl-theme');
+            $('.modal-capacidades').owlCarousel({
+                smartSpeed: 1000,
+                dots: true,
+                nav: false,
+                items: 1,
+                lazyLoad: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: true,
+                mouseDrag: true,
+                touchDrag: true
+            });
+            $('.modal-capacidades').on('translated.owl.carousel', function(e) {
+                $(this).find('.video-text-item.is-active').removeClass('is-active');
+                $(this).find('.owl-item.active .video-text-item').addClass('is-active');
+            });
+        });
+
+        function inicioModal(pos) {
+            switch (pos) {
+                case 0:
+                    $('.modal-capacidades').trigger("to.owl.carousel", [pos, 200]);
+                    break;
+                case 1:
+                    $('.modal-capacidades').trigger("to.owl.carousel", [pos, 200]);
+                    break;
+                case 2:
+                    $('.modal-capacidades').trigger("to.owl.carousel", [pos, 200]);
+                    break;
+                case 3:
+                    $('.modal-capacidades').trigger("to.owl.carousel", [pos, 200]);
+                    break;
+                default:
+                    break;
+            }
+
+            $('.modal-capacidades').trigger('stop.owl.autoplay');
+            setTimeout(() => {
+                $('.modal-capacidades').trigger('play.owl.autoplay');
+            }, "5000")
+        };
     </script>
 
 

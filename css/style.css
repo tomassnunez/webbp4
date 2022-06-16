@@ -65,11 +65,14 @@
 
 /* 1.1 General */
 
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i');
+
+/*@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Teko:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 @font-face {
     font-family: 'Butler';
     src: url('../fonts/butler_regular-webfont.eot');
@@ -99,7 +102,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('Butler Stencil Bold'), url('../fonts/Butler_Bold_Stencil.woff') format('woff');
-}
+}*/
 
 html {
     font-size: 12px;
@@ -227,6 +230,11 @@ html>body .underline:hover {
 #capacidades2 .modal-header .close img {
     margin: 20px;
     padding: 0;
+}
+
+#capacidades2 .modal-header .close {
+    padding: 0rem;
+    margin: -1rem -1rem -1rem auto;
 }
 
 #capacidades2 .expertise-img {
@@ -872,7 +880,7 @@ input:focus {
     width: 100%;
     height: 100%;
     background: #fff;
-    color: #4b4b4b;
+    color: #FF8E09;
     text-align: center;
 }
 
@@ -1433,7 +1441,7 @@ input:focus {
     position: absolute;
     width: 0%;
     transition: width cubic-bezier(0.82, 0, 0.21, 1) 0.3s;
-    color: #000;
+    color: #FF8E09 !important;
     z-index: 2;
     overflow: hidden;
 }
@@ -1679,7 +1687,18 @@ input:focus {
     position: absolute;
     width: 0%;
     transition: width cubic-bezier(0.82, 0, 0.21, 1) 0.3s;
-    color: #000;
+    color: #FF8E09 !important;
+    z-index: 2;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu-main .activo:before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    transition: width cubic-bezier(0.82, 0, 0.21, 1) 0.3s;
+    color: #000 !important;
     z-index: 2;
     overflow: hidden;
     white-space: nowrap;
@@ -6377,7 +6396,7 @@ a:hover .project-metro-photo img {
     position: absolute;
     width: 0%;
     transition: width cubic-bezier(0.82, 0, 0.21, 1) 0.3s;
-    color: #000;
+    color: #FF8E09 !important;
     z-index: 2;
     overflow: hidden;
     white-space: nowrap;
@@ -10024,7 +10043,21 @@ footer.navigation-menu-footer {
 }
 
 #index {
-    background-image: url(../img/fondo-video.png);
+    background-image: url(../img/bg-video-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clientes {
+    background-image: url(../img/bg-video-clientes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#capacidades2 {
+    background-image: url(../img/bg-video-capacidades.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10046,10 +10079,29 @@ footer.navigation-menu-footer {
     margin-bottom: 50px;
 }
 
+.modal-header {
+    border-bottom: 0px solid white !important;
+}
+
 @media screen and (max-width: 768px) {
     .pos-menu-footer {
         position: absolute;
         bottom: 16%;
+    }
+    .modal-dialog {
+        max-width: 768px;
+        padding: 0;
+        margin: 0;
+    }
+    .modal-content {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px !important;
+    }
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -10103,4 +10155,8 @@ footer.navigation-menu-footer {
 .body-menu-opened #metodologiaPage .stick,
 .body-menu-opened #clientes .stick {
     background-color: #000;
+}
+
+button.close {
+    margin: 32px;
 }
